@@ -10,6 +10,10 @@
 
 <br>
 
+![QGIS Embeddings AI Screenshot](docs/screenshot.png)
+
+<br>
+
 ---
 
 <br>

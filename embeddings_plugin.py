@@ -1,4 +1,4 @@
-"""Main plugin class for AlphaEarth."""
+"""Main plugin class for QGIS Embeddings AI."""
 
 import os
 from qgis.PyQt.QtCore import Qt
@@ -6,29 +6,29 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 
 
-class AlphaEarth:
-    """AlphaEarth plugin main class."""
+class EmbeddingsAI:
+    """QGIS Embeddings AI plugin main class."""
 
     def __init__(self, iface):
         self.iface = iface
         self.plugin_dir = os.path.dirname(__file__)
         self.actions = []
-        self.menu_name = "&AlphaEarth"
+        self.menu_name = "&QGIS Embeddings AI"
         self._similarity_dock = None
         self.toolbar = None
 
     def initGui(self):
         """Create UI elements."""
-        self.toolbar = self.iface.addToolBar("AlphaEarth")
-        self.toolbar.setObjectName("AlphaEarthToolbar")
+        self.toolbar = self.iface.addToolBar("QGIS Embeddings AI")
+        self.toolbar.setObjectName("EmbeddingsAIToolbar")
         
-        icon_path = os.path.join(self.plugin_dir, "icons", "alpha_earth.svg")
+        icon_path = os.path.join(self.plugin_dir, "icons", "embeddings_ai.svg")
         
         self.action_similarity = self._add_action(
             icon_path=icon_path,
             text="Similarity Search",
             callback=self.toggle_similarity_dock,
-            status_tip="Open AlphaEarth Similarity Search Tool",
+            status_tip="Open QGIS Embeddings AI Similarity Search Tool",
             checkable=True,
             parent=self.iface.mainWindow(),
         )
@@ -88,7 +88,7 @@ class AlphaEarth:
                 plugin_dir=self.plugin_dir,
                 parent=self.iface.mainWindow()
             )
-            self._similarity_dock.setObjectName("AlphaEarthSimilarityDock")
+            self._similarity_dock.setObjectName("EmbeddingsAISimilarityDock")
             self._similarity_dock.visibilityChanged.connect(self._on_dock_visibility_changed)
             
             self.iface.addDockWidget(Qt.RightDockWidgetArea, self._similarity_dock)

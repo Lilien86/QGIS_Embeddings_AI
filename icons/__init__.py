@@ -11,4 +11,4 @@ def get_icon(name):
     return QIcon(os.path.join(_icons_dir, name))
 
 
-ICON_ALPHA_EARTH = get_icon("alpha_earth.svg")
+ICON_EMBEDDINGS_AI = get_icon("embeddings_ai.svg")

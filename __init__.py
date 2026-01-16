@@ -1,8 +1,8 @@
-"""AlphaEarth - QGIS Plugin for geospatial similarity search using Google Earth Engine."""
+"""QGIS Embeddings AI - Unlock geospatial foundation models in QGIS."""
 
-from .alpha_earth import AlphaEarth
+from .embeddings_plugin import EmbeddingsAI
 
 
 def classFactory(iface):
-    """Load AlphaEarth plugin class."""
-    return AlphaEarth(iface)
+    """Load QGIS Embeddings AI plugin class."""
+    return EmbeddingsAI(iface)

@@ -33,7 +33,7 @@ homepage=https://github.com/Lilien86/Lilien_QGIS_Alpha-Earth
 
 category=Analysis
 
-icon=icons/alpha_earth.svg
+icon=icons/embeddings_ai.svg
 
 tags=gee, google earth engine, similarity, embeddings, remote sensing, satellite, machine learning, deep learning, ai, artificial intelligence, image analysis, geospatial, earth observation
 

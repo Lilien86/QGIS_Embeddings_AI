@@ -22,7 +22,7 @@ class EmbeddingsAI:
         self.toolbar = self.iface.addToolBar("QGIS Embeddings AI")
         self.toolbar.setObjectName("EmbeddingsAIToolbar")
         
-        icon_path = os.path.join(self.plugin_dir, "icons", "embeddings_ai.svg")
+        icon_path = os.path.join(self.plugin_dir, "icons", "terralab_logo.png")
         
         self.action_similarity = self._add_action(
             icon_path=icon_path,

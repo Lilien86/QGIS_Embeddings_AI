@@ -12,6 +12,8 @@
 
 ![QGIS Embeddings AI Screenshot](docs/screenshot.png)
 
+![QGIS Embeddings AI UI](docs/screenshot_ui.png)
+
 <br>
 
 ---
